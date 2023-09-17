@@ -1,0 +1,7 @@
+[package]
+name = "svg-emoji"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Po' Lazarus"]
+license = "MIT"
+description = "Working emoji support through SVG files"
