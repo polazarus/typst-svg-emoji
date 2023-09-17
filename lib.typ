@@ -24,7 +24,7 @@
             noto.dict.at(it.text)
         )
     }
-    [with svg emoji font]
+    // [with svg emoji font]
     body
 }
 
@@ -37,6 +37,6 @@
         let n = t.len()
         data.at(t.slice(1, n - 1))
     }
-    [with github]
+    // [with github]
     body
 }
