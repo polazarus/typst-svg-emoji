@@ -15,6 +15,8 @@ M😢X🚢M
 
 👱‍♀️ `U+1F471 U+200D U+2640 U+FE0F`
 
+⚛️ `U+269B U+FE0F`
+
 == Github naming
 
 ```typst #github.at("+1")``` #github.at("+1")

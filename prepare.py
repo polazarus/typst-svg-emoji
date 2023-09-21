@@ -188,6 +188,13 @@ def prepare_noto_typst_module():
         for seq, path in NOTO_EMOJIS.items()
     }
 
+    # add missing emoji variation sequences
+    for k in EMOJI_VARIATION_SEQUENCES.keys():
+        if k[len(k) - 1] == 0xFE0F:
+            w = "".join(chr(i) for i in k[:-1])
+            if w in noto:
+                noto["".join(chr(i) for i in k)] = noto[w]
+
     with open("noto.json", "w", encoding="utf-8") as f:
         json.dump(noto, f, ensure_ascii=False)
 
