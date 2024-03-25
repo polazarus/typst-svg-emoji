@@ -15,11 +15,9 @@ You can use this package both locally and in the [Typst online editor](https://t
 To install the package locally, make sure you know how local packages work in Typst.
 Please take a look [at the documentation](https://github.com/typst/packages#local-packages) if you are not sure.
 
-- Clone this repository to `{data-dir}/local/svg-emoji/0.1.0`
+- Clone this repository with submodules to download the Noto fonts (`git clone --recurse-submodules <repository-url>`) to `{data-dir}/local/svg-emoji/0.1.0`. 
 - Import `@local/svg-emoji:0.1.0` in your Typst project, for example:
  
-
-
 ```typst
 #import "@local/svg-emoji:0.1.0": setup-emoji, github // only if you want to use GH names for emojis
 
@@ -40,7 +38,7 @@ Note: You can copy the package files to a different directory than `local`, for 
 
 ### Typst.app website
 
-- Clone this repository
+- Clone this repository with submodules to download the Noto fonts `git clone --recurse-submodules <repository-url>`
 - Copy the `github.json`, `raw_github.json`, `noto.json`, `noto.regex`, `lib.typ`, `noto-emoji/svg/*` files (keeping the directory structure)  to a directory in your project, say `svg-emoji`
 - Import the lib file in your Typst project
 
